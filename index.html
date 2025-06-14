@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idleing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Idleing</h1>
+        
+        <div class="counter-section">
+            <h2>Points: <span id="points">0</span></h2>
+            <button id="clickButton">Click Me!</button>
+        </div>
+
+        <div class="prestige-section">
+            <h2>Prestige</h2>
+            <p>Level: <span id="prestigeLevel">0</span></p>
+            <p>Multiplier: <span id="prestigeMultiplier">1.0</span>x</p>
+            <button id="prestigeButton" disabled>Prestige (1000 points)</button>
+            <button id="resetButton" class="reset-button">Hard Reset</button>
+        </div>
+
+        <div class="upgrades-section">
+            <h2>Upgrades</h2>
+            <div class="upgrades-container" id="upgradesContainer">
+                <!-- Upgrades will be added here dynamically -->
+            </div>
+        </div>
+
+        <div class="achievements-section">
+            <h2>Achievements</h2>
+            <ul id="achievementsList"></ul>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
